@@ -1,3 +1,4 @@
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +9,12 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", p => p.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
+
+builder.Services.AddMvc().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.MaxDepth = 64;
+});
+
 builder.Services.AddControllers()
             .AddJsonOptions(options =>
                options.JsonSerializerOptions.PropertyNamingPolicy = null);

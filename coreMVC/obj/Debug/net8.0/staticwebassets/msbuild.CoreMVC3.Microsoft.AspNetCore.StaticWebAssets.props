@@ -2656,6 +2656,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ExcelFiles\WinLoseReport_Overall_L2_2024-10-13-13-42-00.xlsx))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ExcelFiles\WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx))">
+      <SourceType>Package</SourceType>
+      <SourceId>CoreMVC3</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CoreMVC3</BasePath>
+      <RelativePath>ExcelFiles/WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ExcelFiles\WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\ExcelFiles\WinLoseReport_Overall_L3_2024-08-21-12-27-54.xlsx))">
       <SourceType>Package</SourceType>
       <SourceId>CoreMVC3</SourceId>

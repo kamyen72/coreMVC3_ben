@@ -4786,71 +4786,7 @@ namespace CoreMVC2.Controllers
             return Ok(rJason);
         }
 
-        [EnableCors("AllowAll")]
-        [Route("TestBetTrans")]
-        [HttpPost]
-        public IActionResult TestBetTrans([FromBody] InputModel model)
-        {
-            var test = model.InputText;
-
-            ReturnModel rm = new ReturnModel();
-            rm.ReturnText = "ok";
-            string rJason = JsonConvert.SerializeObject(rm);
-            return Ok(rJason);
-        }
-
-
-        [EnableCors("AllowAll")]
-        [Route("GetMPlayerRecs")]
-        [HttpPost]
-        public IActionResult GetMPlayerRecs([FromBody] twodates model)
-        {
-            twodates td = new twodates();
-            td.dateStart = model.dateStart;
-            td.dateEnd = model.dateEnd;
-
-            List<BetTrans> mybets = new List<BetTrans>();
-
-            DBUtil2 dbu = new DBUtil2();
-
-            mybets = dbu.GetMPlayer(td.dateStart, td.dateEnd);
-            var tt = mybets.Count;
-
-            //for (int i = 0; i < mybets.Count; i++)
-            //{
-            //    BetTrans bt = mybets[i];
-            //    int id = bt.ID;
-
-            //    BetTrans mpi = dbu.GetMPlayerInfo(id.ToString());
-            //    bt.Username = mpi.Username;
-            //    bt.Bet_3 = mpi.Bet_3;
-            //    bt.UpdateDate = mpi.UpdateDate;
-            //    bt.BetTime = mpi.BetTime;
-            //    bt.IsWin = mpi.IsWin;
-            //    bt.Openning_Time = mpi.Openning_Time;
-            //}
-
-            ReturnModel rm = new ReturnModel();
-            rm.ReturnText = mybets.Count.ToString();
-            string rJason = JsonConvert.SerializeObject(mybets);
-            return Ok(rJason);
-        }
-
-        [EnableCors("AllowAll")]
-        [Route("GetMPlayerBetInfo")]
-        [HttpPost]
-        public IActionResult GetMPlayerBetInfo([FromBody] InputModel model)
-        {
-            var id = model.InputText;
-
-            BetTrans bt = new BetTrans();
-            DBUtil2 dbu = new DBUtil2();
-            
-
-            bt = dbu.GetMPlayerInfo(id);
-            string rJason = JsonConvert.SerializeObject(bt);
-            return Ok(rJason);
-        }
+        
 
     }
 

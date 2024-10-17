@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "zc4Dlf8Ux1C4TCAv3sRk+ByLoimoNJXlQlKOrWtRQJ8=",
+  "Hash": "7Sn+uz/SLVwm35PBqPQPh98wlw/VFHQTRI3NDxQf9BE=",
   "Source": "CoreMVC3",
   "BasePath": "_content/CoreMVC3",
   "Mode": "Default",
@@ -2542,6 +2542,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-13-42-00.xlsx"
+    },
+    {
+      "Identity": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx",
+      "SourceId": "CoreMVC3",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\",
+      "BasePath": "_content/CoreMVC3",
+      "RelativePath": "ExcelFiles/WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\ExcelFiles\\WinLoseReport_Overall_L2_2024-10-13-18-15-32.xlsx"
     },
     {
       "Identity": "C:\\source_codes\\coreMVC3\\CoreMVC\\wwwroot\\ExcelFiles\\WinLoseReport_Overall_L3_2024-08-21-12-27-54.xlsx",

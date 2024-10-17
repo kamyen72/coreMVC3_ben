@@ -1,6 +1,6 @@
 ﻿namespace CoreMVC3.Models
 {
-    public class twodates
+    public class CalcFieldsInput
     {
         public string dateStart { get; set; }
         public string dateEnd { get; set; }
